@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "serve",
-        "build": "npm run optimze",
+        "build": "npm run optimize",
         "optimize": "npm run optimize:images && npm run optimize:js && npm run optimize:css",
         "optimize:images": "imagemin public/images/* --out-dir public/images",
         "optimize:js": "terser public/js/app.js -o public/js/app.min.js",

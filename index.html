@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover your animal personality type through an interactive personality quiz">
+    <meta name = "theme-color" content = "#5b86e5">
+
+    <title>Animal Personality Quiz</title>
+
+    <!-- Preload critical assets-->
+     <link rel="preload" href="public/css/style.min.css" as="style">
+     <link rel="preload" href="public/js/script.min.js" as="script">
+
+    <!-- Favicon --> 
+     <link rel="icon" type="image/x-icon" href="public/images/favicon.ico">
+
+    <!-- Primary CSS -->
+     <link rel="stylesheet" href="public/css/style.min.css">
+
+    <!-- Font Awesome - loaded asynchronously -->
+     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" media="print" onload="this.media='all'">
+</head>
+<body>
+    <!-- Ap Shell -->
+     <div id="app" class="container">
+        <div class="puzzle-section">
+            <h1>Discover Your Animal Personality</h1>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+                <span class="progress-text">Question <span id="current-question">1</span>/5</span>
+            </div>
+            <div class="question-container" id="quizContainer">
+                <div class="question-container"></div>
+            </div>
+             <div class="result-selection hidden" id="result">
+                <!-- Result will be dynamically inserted -->
+             </div>
+                
+        </div>
+     </div>
+    <!-- Templates -->
+     <template id="question-template">
+        <div class="question" data-question="">
+            <p class="question-test"></p>
+            <div class="options-grid"></div>
+     </template>
+     <template id="result-template">
+        <h2>Your Animal Personality is: <span class="animal-type"></span></h2>
+        <div class="result-image-container"></div>
+        <div class="personality-traits"></div>
+        <div class="analysis-section"></div>
+        <div class="compatability-section"></div>
+        <div class="share-section"></div>  
+        <button class="restart-btn" onclick="quiz.reset()">Try Again</button>  
+    </template>
+
+    <!-- Deferred JS loading-->
+     <script defer src="/public/js/app.min.js"></script>
+        
+</body>
+</html>

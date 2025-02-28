@@ -1,0 +1,28 @@
+{
+    "name": "animal-personality-quiz",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "serve",
+        "build": "npm run optimze",
+        "optimize": "npm run optimize:images && npm run optimize:js && npm run optimize:css",
+        "optimize:images": "imagemin public/images/* --out-dir public/images",
+        "optimize:js": "terser public/js/app.js -o public/js/app.min.js",
+        "optimize:css": "postcss public/css/styles.css -o public/css/styles.min.css"
+    },
+    "dependencies": {
+        "serve": "^14.0.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.0",
+        "cssnano": "^5.0.6",
+        "imagemin-cli": "^7.0.0",
+        "postcss-cli": "^8.3.1",
+        "terser": "^5.7.2"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+    ]
+}

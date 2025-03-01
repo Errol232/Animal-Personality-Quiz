@@ -2,6 +2,9 @@
     "name": "animal-personality-quiz",
     "version": "1.0.0",
     "private": true,
+    "scripts": {
+        "vercel-build": "npm run build"
+    }
     
     "browserslist": [
         ">0.2%",

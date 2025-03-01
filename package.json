@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "vercel-build": "npm run build"
+        "vercel-build": "echo 'No build required'"
     },
     
     "browserslist": [

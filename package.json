@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "vercel-build": "npm run build"
-    }
+    },
     
     "browserslist": [
         ">0.2%",

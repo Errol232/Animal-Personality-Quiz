@@ -43,7 +43,7 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Optimized layoutsusing CSS Grid and Flexbox */
+/* Optimized layouts using CSS Grid and Flexbox */
 .options-grid {
     display: grid;
     gap: 20px;
